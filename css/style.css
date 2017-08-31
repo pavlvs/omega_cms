@@ -60,3 +60,7 @@ footer {
     margin-top: 40px;
     float: right;
 }
+
+.tablesorter th {
+    cursor: pointer;
+}
