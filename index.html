@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <title>Starter Template for Bootstrap</title>
+    <title>OmegaCMS</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -39,24 +39,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <a class="navbar-brand" href="#">OmegaCMS</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
+                    <li class="active"><a href="index.html">Dashboard <span class="sr-only">(current)</span></a></li>
+                    <li><a href="pages.html">Pages</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="users.html">Users</a></li>
                 </ul>
                 <form class="navbar-form navbar-left" role="search">
                     <div class="form-group">
@@ -65,18 +55,104 @@
                     <button type="submit" class="btn btn-default">Submit</button>
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Profile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="login.html">Logout</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="container">
-        <div class="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.
-                <br> All you get is this text and a mostly barebones HTML document.</p>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="index.html" class="list-group-item active"><i class="glyphicon glyphicon-dashboard"></i> Dashboard </a>
+                    <a href="pages.html" class="list-group-item"><i class="glyphicon glyphicon-file"></i> Pages</a>
+                    <a href="categories.html" class="list-group-item"><i class="glyphicon glyphicon-folder-open"></i>&nbsp; Categories</a>
+                    <a href="users.html" class="list-group-item"><i class="glyphicon glyphicon-user"></i> User Accounts</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h1 class="page-header"><i class="glyphicon glyphicon-dashboard"></i> Dashboard</h1>
+                <h3>Latest Pages</h3>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Page Title</th>
+                        <th>Category</th>
+                        <th>Author</th>
+                    </tr>
+                    <tr>
+                        <td><a href="page.html">Sample Page One</a></td>
+                        <td>Category One</td>
+                        <td>John Doe</td>
+                    </tr>
+                    <tr>
+                        <td><a href="page.html">Sample Page Two</a></td>
+                        <td>Category Four</td>
+                        <td>Joe Blow</td>
+                    </tr>
+                    <tr>
+                        <td><a href="page.html">Sample Page Three</a></td>
+                        <td>Category One</td>
+                        <td>Will Gray</td>
+                    </tr>
+                    <tr>
+                        <td><a href="page.html">Sample Page Four</a></td>
+                        <td>Category Three</td>
+                        <td>Mike Somebody</td>
+                    </tr>
+                    <tr>
+                        <td><a href="page.html">Sample Page Five</a></td>
+                        <td>Category Two</td>
+                        <td>Henry Whoever</td>
+                    </tr>
+                </table>
+                <a class="btn btn-default" href="pages.html">View All Pages</a>
+                <hr>
+                <h3>Latest Users</h3>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Group</th>
+                    </tr>
+                    <tr>
+                        <td><a href="user.html">John Doe</a></td>
+                        <td>john@gmail.com</td>
+                        <td>Fantastic Four</td>
+                    </tr>
+                    <tr>
+                        <td><a href="page.html">Joe Blow</a></td>
+                        <td>joe@gmail.comr</td>
+                        <td>Human League</td>
+                    </tr>
+                    <tr>
+                        <td><a href="page.html">Will Graye</a></td>
+                        <td>will@gmail.com</td>
+                        <td>Defenders</td>
+                    </tr>
+                    <tr>
+                        <td><a href="page.html">Mike Somebodyr</a></td>
+                        <td>mike@gmail.com</td>
+                        <td>Avengersy</td>
+                    </tr>
+                    <tr>
+                        <td><a href="page.html">Henry Whoever</a></td>
+                        <td>henry@gmail.com</td>
+                        <td>X-Men</td>
+                    </tr>
+                </table>
+                <a class="btn btn-default" href="users.html">View All Users</a>
+            </div>
         </div>
     </div>
+    <footer>
+        <p class="text-center">Copyright 2017 &copy;OmegaCMS All Rights Reserved.</p>
+    </footer>
     <!-- /.container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -85,9 +161,9 @@
     <script>
     window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
     </script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
